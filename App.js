@@ -108,4 +108,4 @@ io.on('connection',socket=>{
   });
 });
 
-server.listen(port,()=> console.log(`server running on port ${port}`) );
+server.listen(process.env.PORT||port,()=> console.log(`server running on port ${port}`) );
